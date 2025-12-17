@@ -1,0 +1,9 @@
+tag,front_end,use_specaug,best_val_acc,test_acc
+torchaudio-noaug,torchaudio,0,0.6507,0.6468
+panns+aug,panns,1,0.5298,0.5374
+torchaudio-noaug,torchaudio,0,0.81,0.7985
+panns+aug,panns,1,0.9128,0.9017
+torchaudio-noaug,torchaudio,0,0.6842,0.6733
+torchaudio+aug,torchaudio,1,0.7869,0.7793
+torchaudio+aug,torchaudio,1,0.7331,0.7279
+panns-noaug,panns,0,0.7894,0.7712
