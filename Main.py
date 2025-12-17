@@ -52,15 +52,15 @@ train_loader, val_loader, test_loader = get_data_loaders(
 #     fmin=50, fmax=8000, classes_num=len(label2idx)
 # ).to(device)
 
-model = CNN_Baseline_AudioClassifier(
-    sample_rate=16000, window_size=512, hop_size=128, mel_bins=64,
-    fmin=50, fmax=8000, classes_num=len(label2idx)
-).to(device)
-
-# model = CNN_BiLSTM_AudioClassifier(
+# model = CNN_Baseline_AudioClassifier(
 #     sample_rate=16000, window_size=512, hop_size=128, mel_bins=64,
 #     fmin=50, fmax=8000, classes_num=len(label2idx)
 # ).to(device)
+
+model = CNN_BiLSTM_AudioClassifier(
+    sample_rate=16000, window_size=512, hop_size=128, mel_bins=64,
+    fmin=50, fmax=8000, classes_num=len(label2idx)
+).to(device)
 
 # model = Transformer_AudioClassifier(
 #     sample_rate=16000, window_size=512, hop_size=128, mel_bins=64,
